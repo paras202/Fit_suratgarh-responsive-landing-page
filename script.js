@@ -66,3 +66,52 @@ const initSlider = () => {
 
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
+
+const navbar = document.querySelector('.navbar');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        navbar.style.backgroundColor = '444'; // Change background color on scroll
+    } else {
+        navbar.style.backgroundColor = '#333'; // Revert to the initial color
+    }
+});
+
+// form files 
+const joinNowModal = document.getElementById('joinNowModal');
+const signUpModal = document.getElementById('signUpModal');
+const contactUsModal = document.getElementById('contactUsModal');
+const openJoinNowModal = () => {
+    joinNowModal.style.display = 'block';
+}
+
+const closeJoinNowModal = () => {
+    joinNowModal.style.display = 'none';
+}
+
+const openSignUpModal = () => {
+    signUpModal.style.display = 'block';
+}
+
+const closeSignUpModal = () => {
+    signUpModal.style.display = 'none';
+}
+const openContactUsModal = () => {
+    contactUsModal.style.display = 'block';
+}
+
+const closeContactUsModal = () => {
+    contactUsModal.style.display = 'none';
+}
+
+window.addEventListener('click', (event) => {
+    if (event.target === joinNowModal) {
+        closeJoinNowModal();
+    }
+
+    if (event.target === signUpModal) {
+        closeSignUpModal();
+    }
+    if (event.target === contactUsModal) {
+        closeContactUsModal();
+    }
+});

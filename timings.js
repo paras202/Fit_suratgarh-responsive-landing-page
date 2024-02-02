@@ -20,7 +20,3 @@ var x = setInterval(function() {
   }
 }, 1000); 
 
-let menuicon = document.querySelector(".action #menu");
-menu.addEventListener('click',()=>{
-  document.querySelector(".nav .navbar").classList.toggle('active');
-})

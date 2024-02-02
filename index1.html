@@ -37,7 +37,7 @@
                 <!-- Action Buttons -->
                 <div class="flex items-center">
                     <ul class="action flex items-center">
-                        <li><button class="btn">Join Now</button></li>
+                        <li><button class="btn" onclick="openJoinNowModal()">Join Now</button></li>
                         <li class="menu flex" id="menu"><ion-icon name="menu"></ion-icon></li>
                     </ul>
                 </div>
@@ -57,8 +57,8 @@
                         <!-- Display the countdown timer in an element -->
                         <p class="deal text-center">Special Offer: Join now and get a personalized diet plan for free!<span id="demo"></span></p>
                             <div class="buttons">
-                                <button class="btn">Join now</button>
-                                <button class="btn">Contact Us</button>
+                                <button class="btn" onclick="openJoinNowModal()">Join now</button>
+                                <button class="btn" onclick="openContactUsModal()">Contact Us</button>
                             </div>
                     </div>
                     <div class="top-right flex justify-center">
@@ -78,7 +78,7 @@
                             <li>5 days</li>                   
                             <li>Personalized diet chart</li>                          
                             <li>Trainer support</li>
-                            <li><button class="btn">SignUp Now</button></li>
+                            <li><button class="btn" onclick="openSignUpModal()">SignUp Now</button></li>
                         </ul>
                     </div>
                     <div class="box">
@@ -88,7 +88,7 @@
                             <li>Access for one person</li>                   
                             <li>Personalized diet charts</li>                          
                             <li>Trainer support</li>
-                            <li><button class="btn">SignUp Now</button></li>
+                            <li><button class="btn" onclick="openSignUpModal()">SignUp Now</button></li>
                         </ul>
                     </div>
                     <!-- <div class="box">
@@ -108,7 +108,7 @@
                             <li>Access for four person</li>                   
                             <li>Personalized diet plans</li>                          
                             <li>Personal trainer support</li>
-                            <li><button class="btn">SignUp Now</button></li>
+                            <li><button class="btn" onclick="openSignUpModal()">SignUp Now</button></li>
                         </ul>
                     </div>
                 </div>
@@ -208,5 +208,89 @@
     <!-- Icons Link -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        let menuicon = document.querySelector(".action #menu");
+        menu.addEventListener('click',()=>{
+            document.querySelector(".nav .navbar").classList.toggle('active');
+        });
+    </script>
+    <!-- Join Now Modal -->
+    <div id="joinNowModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeJoinNowModal()">&times;</span>
+            <h2>Join Now</h2>
+            <form id="joinNowForm">
+                <!-- Add your Join Now form fields here -->
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" class="btn">Join Now</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div id="signUpModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSignUpModal()">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signUpForm">
+                <!-- Add your Sign Up form fields here -->
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contact Us Modal -->
+    <div id="contactUsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactUsModal()">&times;</span>
+            <h2>Contact Us</h2>
+            <form id="contactUsForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button onclick="submitContactForm()" type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </div> 
+    <script>
+        function submitContactForm() {
+        // Add your logic to handle form submission
+        // You can use AJAX to send the form data to the server
+        alert("Form submitted!");
+        closeContactUsModal();
+    }
+    window.onclick = function (event) {
+        let modals = document.getElementsByClassName("modal");
+        for (let i = 0; i < modals.length; i++) {
+            let modal = modals[i];
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    }
+    </script>
 </body> 
 </html>
