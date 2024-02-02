@@ -66,16 +66,6 @@ const initSlider = () => {
 
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
-
-const navbar = document.querySelector('.navbar');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.style.backgroundColor = '444'; // Change background color on scroll
-    } else {
-        navbar.style.backgroundColor = '#333'; // Revert to the initial color
-    }
-});
-
 // form files 
 const joinNowModal = document.getElementById('joinNowModal');
 const signUpModal = document.getElementById('signUpModal');
