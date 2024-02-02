@@ -1,0 +1,93 @@
+.min-h-screen{
+    min-height: 100vh;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.flex-direction{
+    flex-direction: column;
+}
+
+.items-center{
+    align-items: center;
+
+}
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.font-bold{
+    font-weight: bolder;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.my-1{
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.my-2{
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.px-2{
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.text-blue{
+    color: rgb(250 88 83);
+}
+
+.btn{
+    padding:6px 12px;
+    border: 2px solid  rgb(250 88 83);
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(250 88 83);
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background-color: white;
+    color: rgb(250 88 83);
+}
+
+.overflow-hidden{
+    overflow-x: hidden;
+}
+
+.highlight{
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.nav {
+    position: relative;
+}

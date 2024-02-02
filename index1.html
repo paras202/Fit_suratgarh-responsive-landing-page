@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paras Gym Page - Fit_Suratgarh</title>
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" >
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="slider.css">
+    <script src="script.js" defer></script>
+    <script src="timings.js"></script>
+</head>
+<body class="overflow-hidden">
+    <div class="container mx-auto">
+        <!-- Header Section -->
+        <header>
+            <!-- Navigation Bar -->
+            <nav class="nav flex justify-between">
+                <!-- Logo Section -->
+                <div class="logo font-bold flex items-center text-blue">
+                    <!-- Logo Link -->
+                    <h3><a href="#">Fit_<span>Suratgarh</span></a></h3>
+                </div>
+                <!-- Navigation Links -->
+                <div class="flex items-center">
+                    <!-- Navigation Links List -->
+                    <ul class="links navbar items-center">
+                        <!-- List Items -->
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Action Buttons -->
+                <div class="flex items-center">
+                    <ul class="action flex items-center">
+                        <li><button class="btn">Join Now</button></li>
+                        <li class="menu flex" id="menu"><ion-icon name="menu"></ion-icon></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Horizontal Line -->
+            <hr> 
+        </header>
+        <main class="min-h-screen">
+            <section class="section1">
+                <div class="flex contentbox"> 
+                    <div class="top-left flex flex-col justify-center px-2">
+                        <div class="text-center">
+                            <img class="yoga" src="muscle.png" alt="muscle image">
+                        </div>
+                        <h1 class="my-1 text-center">Transform Your Body at Fit_Suratgarh</h1>
+                        <p class="desc text-center">Experience the best fitness journey in Suratgarh with state-of-the-art equipment and personalized training plans from expert trainers.</p>
+                        <!-- Display the countdown timer in an element -->
+                        <p class="deal text-center">Special Offer: Join now and get a personalized diet plan for free!<span id="demo"></span></p>
+                            <div class="buttons">
+                                <button class="btn">Join now</button>
+                                <button class="btn">Contact Us</button>
+                            </div>
+                    </div>
+                    <div class="top-right flex justify-center">
+                        <img class="coimg" src="cover.jpg" alt="cover page">
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="section2">
+                <h1 class="text-center my-2">Membership Packages</h1>
+                <p class="my-2">Choose a membership plan that fits your fitness goals and lifestyle.</p>
+                <div class="boxes flex justify-center">
+                    <div class="box">
+                        <h2>Free trial</h2>
+                        <ul class="freepack">
+                            <li class="highlight">₹0/onetime</li>
+                            <li>5 days</li>                   
+                            <li>Personalized diet chart</li>                          
+                            <li>Trainer support</li>
+                            <li><button class="btn">SignUp Now</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Individual Membership</h2>
+                        <ul>
+                            <li class="highlight">₹1500/month</li>
+                            <li>Access for one person</li>                   
+                            <li>Personalized diet charts</li>                          
+                            <li>Trainer support</li>
+                            <li><button class="btn">SignUp Now</button></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="box">
+                        <h2>Membership 2</h2>
+                        <ul>
+                            <li>₹0</li>
+                            <li> days</li>                   
+                            <li>1 diet chart</li>                          
+                            <li>trainer support</li>
+                            <li><button class="btn">SignUp Now</button></li>
+                        </ul>
+                    </div> -->
+                    <div class="box">
+                        <h2>Group Membership</h2>
+                        <ul>
+                            <li class="highlight">₹5000/month</li>
+                            <li>Access for four person</li>                   
+                            <li>Personalized diet plans</li>                          
+                            <li>Personal trainer support</li>
+                            <li><button class="btn">SignUp Now</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="section3">
+                <h1 class="text-center my-2">Compare Plans</h1>
+                <div class="container plantable">
+                    <table class="table text-center">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Basic</th>
+                          <th>Premium</th>
+                          <th>Ultimate</th>
+                        </tr>
+                      </thead>
+                      <!-- <tbody>
+                        <tr>
+                          <th scope="row" class="text-start">Public</th>
+                          <td>Yes</td>
+                          <td>Yes</td>
+                          <td>Yes</td>
+                        </tr>
+                        <tr>
+                          <th scope="row" class="text-start">Private</th>
+                          <td>-</td>
+                          <td>Yes</td>
+                          <td>Yes</td>
+                        </tr>
+                      </tbody> -->
+                      <tbody>
+                        <tr>
+                            <th scope="row" class="text-start">Public Access</th>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Private Sessions</th>
+                            <td>-</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Personal Trainer</th>
+                            <td>-</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Nutrition Guidance</th>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Yes</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </section>
+            <hr>
+            <section class="section4">
+                <div class="container1">
+                    <div class="slider-wrapper">
+                      <button1 id="prev-slide" class="slide-button material-symbols-rounded">
+                        chevron_left
+                      </button1>
+                      <ul class="image-list">
+                        <img class="image-item" src="./images/image1.jpg" alt="img-1" />
+                        <img class="image-item" src="./images/image2.jpg" alt="img-2" />
+                        <img class="image-item" src="./images/image3.jpg" alt="img-3" />
+                        <img class="image-item" src="./images/image4.jpg" alt="img-4" />
+                        <img class="image-item" src="./images/image5 (1).jpg" alt="img-5" />
+                        <img class="image-item" src="./images/image5 (2).jpg" alt="img-6" />
+                        <img class="image-item" src="./images/image5 (3).jpg" alt="img-7" />
+                        <img class="image-item" src="./images/image5 (4).jpg" alt="img-8" />
+                        <img class="image-item" src="./images/yoga.png" alt="img-9" />
+                      </ul>
+                      <button1 id="next-slide" class="slide-button material-symbols-rounded">
+                        chevron_right
+                      </button1>
+                    </div>
+                    <div class="slider-scrollbar">
+                      <div class="scrollbar-track">
+                        <div class="scrollbar-thumb"></div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+            <!-- Horizontal Line -->
+            <hr>
+            <footer>
+                Copyright &copy; Fit_Suratgarh.com | All rights reserved
+            </footer> 
+        </main>
+    <script src="timer.js"></script>
+    <!-- Icons Link -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body> 
+</html>
